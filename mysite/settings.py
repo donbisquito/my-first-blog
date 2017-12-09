@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+#	'django.contrib.sites',
     'blog',
+#	'disqus',
 ]
 
 MIDDLEWARE = [
@@ -120,3 +122,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# DISQUS_API_KEY = 'ETuZcrjpACfn6vLzXgKDnlPXGSiiQngnkcdypQJqjrxlQco0iKL0LPIGh8EB3DOL'
+# DISQUS_WEBSITE_SHORTNAME = 'Bisquito blog'
+
+# SITE_ID = 1
+
+LOGIN_REDIRECT_URL = '/'
